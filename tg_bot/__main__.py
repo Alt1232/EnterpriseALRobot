@@ -158,10 +158,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                                 text=gs(chat.id, "updates_channel_link_btn"),
                                 url="https://t.me/KigyoUpdates",
                             ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "src_btn"),
-                                url="https://github.com/Dank-del/EnterpriseALRobot",
-                            ),
+                            
                         ],
                         [
                             InlineKeyboardButton(
