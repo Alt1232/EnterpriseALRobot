@@ -150,24 +150,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/YorktownEagleUnion',
-                            ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
-                            ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "src_btn"),
-                                url="https://github.com/Dank-del/EnterpriseALRobot",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="Try inline",
-                                switch_inline_query_current_chat="",
-                            ),
+                            
                             InlineKeyboardButton(
                                 text="Help",
                                 callback_data="help_back",
