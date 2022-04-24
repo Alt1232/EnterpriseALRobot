@@ -15,7 +15,7 @@ pm_start_text: |
 grp_start_text: "Hi, I'm Kigyo."
 
 pm_help_text: |
-   Hello there! My name is *Kigyo*. A part of *Eagle Union*.
+   Hello there! My name is *Kigyo*.
    I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of
    the things I can help you with.
    *Main* commands available:
@@ -28,8 +28,6 @@ pm_help_text: |
     Click on the buttons below to get documentation about specific modules!
 
 add_bot_to_group_btn: "Add Kigyo"
-support_chat_link_btn: "Support"
-updates_channel_link_btn: "Updates"
 
 
 admin_help: |
