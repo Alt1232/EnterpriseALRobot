@@ -2,7 +2,7 @@
 log = True
 APP_ID = 8781248
 API_HASH = '329a9246cc001b67895fd68a85d0f867'
-TOKEN = "5393736227:AAGFFb0xChvQyZHrDKqk3e2ESBwQmras2ng"
+TOKEN = 5393736227:AAGFFb0xChvQyZHrDKqk3e2ESBwQmras2ng
 OWNER_ID = 1174557449
 OWNER_USERNAME = 'rqveriie'
 SQLALCHEMY_DATABASE_URI = postgresql://tcuboige:nx6zP25bryt_KY89txDNClou1CUxu0-f@isilo.db.elephantsql.com/tcuboige
