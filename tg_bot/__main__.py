@@ -101,9 +101,8 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
         kb = paginate_modules(0, HELPABLE, "help")
-        # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-        #           InlineKeyboardButton(text='Back', callback_data='start_back'),
-        #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+        # kb.append([InlineKeyboardButton(text='Anime fans kerala', url='https://t.me/AnimeFans_Kerala'),
+        #           InlineKeyboardButton(text='Back', callback_data='start_back')])
         keyboard = InlineKeyboardMarkup(kb)
     dispatcher.bot.send_message(
         chat_id=chat_id, text=text, parse_mode=ParseMode.MARKDOWN, reply_markup=keyboard
@@ -189,7 +188,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                 text = "Here is the help for the *{}* module:\n".format(HELPABLE[mod].__mod_name__) + help_text
                 help_buttons.append(
                     [InlineKeyboardButton(text="Back", callback_data="help_back"),
-                     InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion')]
+                     InlineKeyboardButton(text='Anime fans kerala', url='https://t.me/AnimeFans_Kerala')]
                 )
                 send_help(
                     chat.id,
@@ -316,7 +315,7 @@ def help_button(update: Update, context: CallbackContext):
             )
             help_buttons.append(
                 [InlineKeyboardButton(text="Back", callback_data="help_back"),
-                 InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion')]
+                 InlineKeyboardButton(text='Support', url='https://t.me/AnimeFans_Kerala')]
             )
             query.message.edit_text(
                 text=text,
@@ -327,9 +326,8 @@ def help_button(update: Update, context: CallbackContext):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             kb = paginate_modules(curr_page - 1, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-            #           InlineKeyboardButton(text='Back', callback_data='start_back'),
-            #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/AnimeFans_Kerala'),
+            #           InlineKeyboardButton(text='Back', callback_data='start_back')])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -339,9 +337,8 @@ def help_button(update: Update, context: CallbackContext):
         elif next_match:
             next_page = int(next_match.group(1))
             kb = paginate_modules(next_page + 1, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-            #           InlineKeyboardButton(text='Back', callback_data='start_back'),
-            #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+            # kb.append([InlineKeyboardButton(text='Anime fans kerala', url='https://t.me/AnimeFans_Kerala'),
+            #           InlineKeyboardButton(text='Back', callback_data='start_back'])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -350,9 +347,8 @@ def help_button(update: Update, context: CallbackContext):
 
         elif back_match:
             kb = paginate_modules(0, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-            #           InlineKeyboardButton(text='Back', callback_data='start_back'),
-            #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+            # kb.append([InlineKeyboardButton(text='Anime fans kerala', url='https://t.me/AnimeFans_Kerala'),
+            #           InlineKeyboardButton(text='Back', callback_data='start_back')])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -436,7 +432,7 @@ def get_help(update: Update, context: CallbackContext):
             text = "Here is the available help for the *{}* module:\n".format(HELPABLE[module].__mod_name__) + help_text
             help_buttons.append(
                 [InlineKeyboardButton(text="Back", callback_data="help_back"),
-                 InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion')]
+                 InlineKeyboardButton(text='Anime fans kerala', url='https://t.me/AnimeFans_Kerala')]
             )
             send_help(
                 chat.id,
