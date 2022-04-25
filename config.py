@@ -2,7 +2,7 @@
 log = True
 APP_ID = 8781248
 API_HASH = 329a9246cc001b67895fd68a85d0f867
-TOKEN = 5393736227:AAGFFb0xChvQyZHrDKqk3e2ESBwQmras2ng
+TOKEN = 5393515983:AAEC2btjfmPriBwKL387qGGnR8Wa6pQ_Hjc
 OWNER_ID = 1174557449
 OWNER_USERNAME = rqveriie
 SQLALCHEMY_DATABASE_URI = postgresql://frfkdjnf:iMaKcmNYWUV2wRlkXYLhi8Od5g_EVJet@kesavan.db.elephantsql.com/frfkdjnf
